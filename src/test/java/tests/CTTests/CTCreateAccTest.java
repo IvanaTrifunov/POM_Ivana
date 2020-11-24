@@ -10,7 +10,6 @@ import pom_classes.CT.CTCreateAcc;
 import selenium_core.DriverManager;
 import selenium_core.DriverManagerFactory;
 import selenium_core.DriverType;
-import selenium_core.HelpfulMethods;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;

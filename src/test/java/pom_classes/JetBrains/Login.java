@@ -23,7 +23,7 @@ public class Login {
 
     }
     public String warningMsg(){
-       return driver.findElement(warning).getText();
+       return driver.findElement(warning).getText(); // mozda bih ovo mogla da izdvojim u posebnu klasu
     }
 
 
