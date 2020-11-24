@@ -22,7 +22,7 @@ public class NewsletterPrijava {
     public void prijaviSe(String emailAdresa) {
         driver.findElement(unosEmail).sendKeys(emailAdresa);
        // driver.findElement(unosEmail).sendKeys(Keys.ENTER);
-       driver.findElement(posaljiMejl).click();
+       driver.findElement(posaljiMejl).click(); //ovo ne radi, ne znam zasto osvezi stranu umesto da da warning
 
     }
 }

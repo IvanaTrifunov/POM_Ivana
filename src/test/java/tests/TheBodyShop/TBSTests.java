@@ -34,18 +34,17 @@ public class TBSTests {
         driver.get(URL);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-    @Ignore
     @Test
-    public void napraviKorpu() throws InterruptedException {
+    public void napraviKorpu() {
         korpa = new KreirajKorpu(driver);
         korpa.kreirajKorpu();
-        Thread.sleep(3_000);
        // korpa.ukloniIzKorpe();
         placanje = new ProveriKorpu(driver);
         Assert.assertEquals(placanje.proveriKorpu(), "Vaša korpa");
 
     }
     @Test
+    @Ignore
     //ovde dodati parametre za email adresu
     public void prijavaNewsletter(){
         prijava=new NewsletterPrijava(driver);
@@ -54,9 +53,9 @@ public class TBSTests {
     }
 
 
-//    @AfterClass
-//    public void tearDown(){
-//        driverManager.quitDriver();
-//    }
+    @AfterClass
+    public void tearDown(){
+        driverManager.quitDriver();
+    }
 
 }

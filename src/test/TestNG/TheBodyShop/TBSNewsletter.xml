@@ -5,7 +5,9 @@
     <test name="Prijava na Newsletter">
         <classes>
             <class name="tests.TheBodyShop.TBSTests">
-                <methods></methods>
+                <methods>
+
+                </methods>
             </class>
         </classes>
     </test>

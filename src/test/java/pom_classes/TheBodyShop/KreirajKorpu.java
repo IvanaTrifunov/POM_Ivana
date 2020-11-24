@@ -13,7 +13,7 @@ public class KreirajKorpu {
         this.driver = driver;
     }
     private By nadjiProizvod = By.cssSelector(".container >[id=banner-slider-demo-15]");
-    private By ubaciUKorpu = By.cssSelector(".item:nth-child(1) .actions-primary span");//mora ovde neki skrol da se ubaci
+    private By ubaciUKorpu = By.cssSelector(".item:nth-child(1) .actions-primary span");
     private By proveriKorpu = By.cssSelector(".page.messages>div>div>div>div>a");
     private By ukloni = By.cssSelector(".action.action-delete");
 
@@ -24,9 +24,9 @@ public class KreirajKorpu {
         driver.findElement(proveriKorpu).click();
 
 
-    }
-    public void ukloniIzKorpe(){
-        driver.findElement(ukloni).click();
+//    }
+//    public void ukloniIzKorpe(){
+//    driver.findElement(ukloni).click();
     }
 
 }
