@@ -1,9 +1,14 @@
 package tests.JetBrains;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pom_classes.JetBrains.Login;
@@ -29,9 +34,13 @@ public class JetBrains {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @Test
-    public void LoginJB() throws InterruptedException {
+    @Parameters ({"email", "sifra"})
+
+    public void LoginJB(String email, String sifra) throws InterruptedException {
         login = new Login(driver);
-        login.login("iv", "iv");
+        login.login(email, sifra);
+//        WebDriverWait wait = new WebDriverWait(driver, 10);
+//        wait.until(ExpectedConditions.visibilityOf((WebElement) By.cssSelector(".js-auth-dialog-div-errors")));
         Assert.assertEquals(login.warningMsg(), "Incorrect username and/or password");
     }
 

@@ -14,13 +14,12 @@ public class Login {
     private By password = By.cssSelector("[name='password']");
     private By signIn = By.cssSelector(".js-auth-dialog-btn-signin");
     private By warning = By.cssSelector(".js-auth-dialog-div-errors");
-   // private By warning = By.xpath("//p[contains(.,'Incorrect username and/or password')]");
 
     public void login(String email,String passwordT) throws InterruptedException {
         driver.findElement(username).sendKeys(email);
         driver.findElement(password).sendKeys(passwordT);
         driver.findElement(signIn).click();
-        Thread.sleep(3000);
+        Thread.sleep(3000); //ovo treba zameniti, ali nisam uspela
 
     }
     public String warningMsg(){

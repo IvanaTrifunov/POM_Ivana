@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JetBrains" thread-count="1">
+    <parameter name="email" value="ivanaiv"/>
+    <parameter name="sifra" value="iv"/>
+    <test name=" JB Login">
+        <classes>
+            <class name="tests.JetBrains.JetBrains"/>
+        </classes>
+    </test>
+    <test name=" JB Login fail">
+        <classes>
+            <class name="tests.JetBrains.JetBrains"/>
+            <parameter name="email" value="ivanaiv@gmail.com"/>
+
+        </classes>
+    </test>
+</suite>
