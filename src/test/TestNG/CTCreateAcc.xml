@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CT Account" thread-count="1">
+    <parameter name="ime" value="Ivana"/>
+    <parameter name="prezime" value="Trifunovic"/>
+    <parameter name="email" value="ivana@ivana.iv"/>
+    <parameter name="sifra" value="Ivana123!"/>
+    <parameter name="alMsg" value="Hvala na registraciji. Molimo proverite email i aktivirajte Vaš nalog."/>
+    <test name="Create Account allgood">
+        <classes>
+            <class name="tests.CTTests.CTCreateAccTest"/>
+        </classes>
+    </test>
+    <test name="Create Account jok">
+        <classes>
+            <class name="tests.CTTests.CTCreateAccTest"/>
+            <parameter name="alMsg" value="Već postoji nalog sa unetom email adresom! Molimo ulogujte se!"/>
+        </classes>
+    </test>
+</suite>
