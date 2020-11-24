@@ -15,5 +15,5 @@ public class IzaberiProizvod {
         driver.findElement(izaberiArtikal).submit();
         driver.findElement(kupiArtikal).click();
     }
-
+//komentar za git
 }
