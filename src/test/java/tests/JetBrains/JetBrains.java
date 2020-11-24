@@ -1,4 +1,4 @@
-package tests;
+package tests.JetBrains;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
