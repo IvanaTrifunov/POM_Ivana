@@ -12,21 +12,21 @@ public class KreirajKorpu {
     public KreirajKorpu (WebDriver driver){
         this.driver = driver;
     }
-    private By nadjiKalendar = By.cssSelector(".container >[id=banner-slider-demo-15]");
+    private By nadjiProizvod = By.cssSelector(".container >[id=banner-slider-demo-15]");
     private By ubaciUKorpu = By.cssSelector(".item:nth-child(1) .actions-primary span");//mora ovde neki skrol da se ubaci
     private By proveriKorpu = By.cssSelector(".page.messages>div>div>div>div>a");
     private By ukloni = By.cssSelector(".action.action-delete");
 
 
     public void kreirajKorpu (){
-        driver.findElement(nadjiKalendar).click();
-        driver.findElement(ubaciUKorpu).click();
+        driver.findElement(nadjiProizvod).click();
+        driver.findElement(ubaciUKorpu).submit();
         driver.findElement(proveriKorpu).click();
 
 
-//    }
-//    public void ukloniIzKorpe(){
-//        driver.findElement(ukloni).click();
+    }
+    public void ukloniIzKorpe(){
+        driver.findElement(ukloni).click();
     }
 
 }

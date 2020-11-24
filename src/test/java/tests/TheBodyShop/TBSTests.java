@@ -35,15 +35,15 @@ public class TBSTests {
         korpa = new KreirajKorpu(driver);
         korpa.kreirajKorpu();
         Thread.sleep(3_000);
-       // korpa.ukloniIzKorpe();
+       korpa.ukloniIzKorpe();
 
 
     }
 
 
-   // @AfterClass
-   // public void tearDown(){
-      //  driverManager.quitDriver();
-   // }
+    @AfterClass
+    public void tearDown(){
+        driverManager.quitDriver();
+    }
 
 }
