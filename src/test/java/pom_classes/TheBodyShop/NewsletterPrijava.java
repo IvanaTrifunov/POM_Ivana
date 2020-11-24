@@ -1,6 +1,7 @@
 package pom_classes.TheBodyShop;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class NewsletterPrijava {
@@ -14,13 +15,14 @@ public class NewsletterPrijava {
     }
 
     private By unosEmail = By.cssSelector("#footer_newsletter");
-    private By posaljiMejl = By.cssSelector(".actions>.action.subscribe.primary");
+    private By posaljiMejl = By.cssSelector(".subscribe > span");
 
 
 
     public void prijaviSe(String emailAdresa) {
         driver.findElement(unosEmail).sendKeys(emailAdresa);
-        driver.findElement(posaljiMejl).click();
+       // driver.findElement(unosEmail).sendKeys(Keys.ENTER);
+       driver.findElement(posaljiMejl).click();
 
     }
 }

@@ -6,8 +6,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
-import pom_classes.Google.GoogleResultPage;
-import pom_classes.Google.GoogleSearchPage;
 import pom_classes.TheBodyShop.KreirajKorpu;
 import pom_classes.TheBodyShop.NewsletterPrijava;
 import pom_classes.TheBodyShop.ProveriKorpu;

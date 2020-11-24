@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TBS" thread-count="1">
+    <test name="Prijava na Newsletter">
+        <classes>
+            <class name="tests.TheBodyShop.TBSTests">
+                <methods></methods>
+            </class>
+        </classes>
+    </test>
+</suite>
