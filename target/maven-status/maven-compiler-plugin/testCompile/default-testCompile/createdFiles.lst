@@ -1,0 +1,12 @@
+pom_classes/TheBodyShop/KreirajKorpu.class
+pom_classes/JetBrains/Login.class
+tests/GoogleTests/GoogleSearchTests.class
+tests/JetBrains/JetBrains.class
+tests/CTTests/CTCreateAccTest.class
+pom_classes/TheBodyShop/ProveriKorpu.class
+pom_classes/CT/CTCreateAcc.class
+pom_classes/Google/GoogleResultPage.class
+pom_classes/TheBodyShop/NewsletterPrijava.class
+pom_classes/Google/GoogleSearchPage.class
+pom_classes/CT/CTAccount.class
+tests/TheBodyShop/TBSTests.class
