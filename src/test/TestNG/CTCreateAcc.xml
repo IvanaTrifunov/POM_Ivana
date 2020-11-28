@@ -2,20 +2,46 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="CT Account" thread-count="1">
+    <parameter name="browser" value="CHROME"/>
     <parameter name="ime" value="Ivana"/>
     <parameter name="prezime" value="Trifunovic"/>
     <parameter name="email" value="ivana@ivana.iv"/>
     <parameter name="sifra" value="Ivana123!"/>
     <parameter name="alMsg" value="Hvala na registraciji. Molimo proverite email i aktivirajte Vaš nalog."/>
-    <test name="Create Account allgood">
+    <test name="Create Account Chome">
         <classes>
             <class name="tests.CTTests.CTCreateAccTest"/>
         </classes>
     </test>
+
+   <test name="Create Account space as First Name">
+        <parameter name="ime" value=" "/>
+        <classes>
+            <class name="tests.CTTests.CTCreateAccTest"/>
+        </classes>
+    </test>
+    <!--<test name="Create Account space as Password">
+        <parameter name="sifra" value=" "/>
+
+        <classes>
+            <class name="tests.CTTests.CTCreateAccTest"/>
+        </classes>
+    </test>
+    <test name="Create Account short Password">
+        <parameter name="sifra" value="iv"/>
+
+        <classes>
+            <class name="tests.CTTests.CTCreateAccTest"/>
+        </classes>
+    </test>
+
+
+
+
     <test name="Create Account jok">
         <classes>
             <class name="tests.CTTests.CTCreateAccTest"/>
             <parameter name="alMsg" value="Već postoji nalog sa unetom email adresom! Molimo ulogujte se!"/>
         </classes>
-    </test>
+    </test> -->
 </suite>

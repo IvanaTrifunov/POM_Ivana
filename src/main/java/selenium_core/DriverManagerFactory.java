@@ -4,16 +4,16 @@ public class DriverManagerFactory {
     public DriverManagerFactory(){
 
     }
-    public static DriverManager getDriverManager (DriverType type){
+    public static DriverManager getDriverManager (String browser){
         Object driverManager;
-        switch (type){
-            case CHROME:
+        switch (browser){
+            case "CHROME":
                 driverManager = new ChromeDriverManager();
                 break;
-            case FIREFOX:
+            case "FIREFOX":
                 driverManager = new FirefoxDriverManager();
                 break;
-            case SAFARI:
+            case "SAFARI":
                 driverManager = new SafariDriverManager();
                 break;
             default:

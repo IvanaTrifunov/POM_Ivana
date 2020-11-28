@@ -1,0 +1,1 @@
+{"uuid":"982e423e-a215-4fe4-bd8f-066d57ff6ebf","name":"tests.CTTests.CTCreateAccTest","children":["37a217d7-5768-46da-b7cf-41c5cd728707"],"befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1606570290814,"stop":1606570290968}],"links":[],"start":1606570271189,"stop":1606570290971}

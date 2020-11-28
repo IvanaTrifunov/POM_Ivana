@@ -29,7 +29,7 @@ public class TBSTests {
 
     @BeforeMethod
     public void setup(){
-        driverManager = DriverManagerFactory.getDriverManager(DriverType.CHROME);
+        driverManager = DriverManagerFactory.getDriverManager("CHROME");
         driver = driverManager.getWebDriver();
         driver.get(URL);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
